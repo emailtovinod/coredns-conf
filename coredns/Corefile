@@ -1,0 +1,10 @@
+homelab.tanzu:53 {
+    file /etc/coredns/zones/homelab.tanzu.db
+    log
+}
+. {
+    forward . 8.8.8.8
+    cache
+    log
+}
+

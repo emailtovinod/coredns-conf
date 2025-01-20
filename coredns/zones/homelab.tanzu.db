@@ -1,0 +1,11 @@
+$TTL 1D
+@       IN SOA  coredns1.homelab.tanzu. hostmaster.homelab.tanzu. (
+                                2025012001 ; Serial
+                                3H         ; Refresh
+                                15M        ; Retry
+                                1W         ; Expire
+                                1D )       ; Negative Cache TTL
+;
+@               IN      NS      coredns1.homelab.tanzu.
+coredns1        IN      A       192.168.5.170
+hlvc            IN      A       192.168.5.110
